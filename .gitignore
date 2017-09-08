@@ -1,0 +1,16 @@
+
+__pycache__/
+*.pyc
+*.txt~
+*.py~
+aenv/
+
+# stuff from Mac OS
+.DS_Store
+.gitignore~
+*~
+#.gitignore#
+
+# keys
+secure.py
+secure.py~ 
