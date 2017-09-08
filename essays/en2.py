@@ -23,3 +23,8 @@ Having completed her third long-duration voyage on the International Space Stati
 *
 https://www.nasa.gov/feature/nasa-astronaut-peggy-whitson-shares-thoughts-on-extended-mission-returning-to-earth
 """
+
+all_en2_words = essay_en2.split(" ")  
+
+all_en2_words = [ word.replace(",", "").replace("!", "").replace("\n", "").replace(".", "").replace(";", "").replace(":", "").replace("?", "")
+                  for word in all_en2_words ]

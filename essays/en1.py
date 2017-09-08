@@ -23,3 +23,11 @@ There were two other astronauts on the space station with Peggy during her missi
 
 The astronauts are very lucky to get to live in such a cool place.  So this week is really important because it's about space and speed and family and love and love is great.
 """
+
+all_en1_words = essay_en1.split(" ")
+all_en1_words = [ str.rstrip(word) for word in all_en1_words ]
+
+all_en1_words = [ word.replace(",", "").replace("!", "").replace("\n", "").replace(".", "").replace(";", "").replace(":", "").replace("?", "")
+                  for word in all_en1_words ]
+
+
