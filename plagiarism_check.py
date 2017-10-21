@@ -25,13 +25,14 @@ def check_text(text):
     sentences = split_sentences(text)
     length_dict = {}
     max_length = 0
+    # Only check the longest sentence because the google api only allows 100 queries per day
     for sentence in sentences:
         words = sentence.split(' ')
         size = len(words)
         if size > max_length:
             max_length = size
         length_dict[size] = sentence
-    check_sentence = length_dict[max_length]
+    check_sentence = length_dict[max_length]  # There's a more efficient way to do this without a dictionary
     num_hits = query(check_sentence)
     print('Found {} sites with this sentence\nSentence searched:\n{}'.format(num_hits, check_sentence))
     if num_hits > 0:
