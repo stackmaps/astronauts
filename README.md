@@ -7,3 +7,14 @@ The materials assume Python 3.
 ## Teaching materials
 
 The teaching_resources branch contains additional materials.
+
+## Google API
+
+Get an API key from here: https://developers.google.com/custom-search/json-api/v1/overview
+
+In the terminal set the environment variable to you key.
+
+Type:
+> export API_KEY=YOURKEY
+
+Now you are ready to run plagiarism_check.py!
