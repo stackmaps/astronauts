@@ -27,7 +27,7 @@ def add_quotes(query):
 def query(query):
     """ Query google api """
     if not API_KEY:
-        raise ValueError('API_KEY is not set.  Type:\nexport API_KEY=YOURKEY\n\nGet an API key here! '
+        raise ValueError('API_KEY is not set.  In the shell, type:\n\nexport API_KEY=YOURKEY\n\nGet an API key here! '
                          'https://developers.google.com/custom-search/json-api/v1/overview')
     query = add_quotes(query)
     # query = urllib.quote_plus(query) # Python 2
