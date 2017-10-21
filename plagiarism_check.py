@@ -3,10 +3,9 @@
 from googleapi.search import query
 
 '''
-    read_essays.py
+    plagiarism_check.py
 
-    This Python file can be used as a starting point for  
-    teaching the computer to grade a school essay.
+    Check a sentence in the essay for plagiarism
 '''
 
 # Don't worry about these 2 lines
