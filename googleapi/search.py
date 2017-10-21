@@ -11,8 +11,9 @@ https://cse.google.com/cse/create/getcode?cx=016969227690395280118%3Aej0xpwldlgc
 import requests
 import json
 import urllib
+import os
 
-API_KEY = 'AIzaSyDf0vgrDWiZ12wTtpl2RWZzmRbNGEyOzuY'
+API_KEY = os.getenv('API_KEY', None)
 ENGINE = '016969227690395280118:ej0xpwldlgc'
 
 
@@ -25,6 +26,9 @@ def add_quotes(query):
 
 def query(query):
     """ Query google api """
+    if not API_KEY:
+        raise ValueError('API_KEY is not set.  Type:\nexport API_KEY=YOURKEY\n\nGet an API key here! '
+                         'https://developers.google.com/custom-search/json-api/v1/overview')
     query = add_quotes(query)
     # query = urllib.quote_plus(query) # Python 2
     query = urllib.parse.quote_plus(query)  # Python 3
