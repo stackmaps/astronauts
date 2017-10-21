@@ -12,7 +12,7 @@ The teaching_resources branch contains additional materials.
 
 Get an API key from here: https://developers.google.com/custom-search/json-api/v1/overview
 
-In the terminal set the environment variable to you key.
+In the terminal set the environment variable to your key.
 
 Type:
 > export API_KEY=YOURKEY
