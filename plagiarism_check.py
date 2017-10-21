@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-from googleapi.search import query
 
+from googleapi.search import query
 
 '''
     read_essays.py
